@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+}
+
+.Lista {
+    color: white;
+    display: inline-flex;
+    font-size: 33px;
+
+}
+.Lista a {
+    padding: 20px;
+    color: rgb(158, 149, 149);
+    transition: 1s;
+}
+
+.Lista a:hover {
+    transition: 1s;
+    color: white;
+}
+.container-lista{
+    z-index: 2;
+    position: fixed; /* Mantém a seção fixa na posição */
+    top: 50%; /* Centraliza verticalmente */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta a posição para realmente centralizar */
+    width: 300px; /* Largura da seção */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto dentro da seção */
+}

@@ -1,0 +1,73 @@
+.titulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 500%;
+    transition: 1s;
+    color: white;
+    padding-bottom: 40%;
+    }
+
+.titulo:hover {
+    transition: 1s;
+    color: red;
+    
+    
+}
+.subtitulo-link {
+    color: white;
+}
+
+.subtitulo-link:hover {
+    color: red;
+    transition: 1s;
+}
+.subtitulo {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 200%;
+    transition: 1s;
+    color: white;
+}
+.subtitulo:hover{
+    transition: 1s;
+    color: red;
+    
+}
+.Initial-text {
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 80%;
+    color: white;
+}
+.direita-texto{
+    padding: 20px;
+    background-color: grey;
+    position: fixed;
+    left: 2%;
+    top: 10%;
+    display: flexbox; 
+    border-radius: 20px;
+    transition: 1s;
+}
+.direita-texto:hover {
+    font-size: 140%;
+    padding: 40px;
+    transition: 1s;
+    background-color: rgb(88, 86, 86);
+}
+#insta {
+    position: fixed; /* Mantém a seção fixa na posição */
+    top: 20px; /* Distância do topo da página */
+    right: 20px; /* Distância da direita da página */
+    width: 200px; /* Largura da seção */
+
+
+}
+.insta {
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
