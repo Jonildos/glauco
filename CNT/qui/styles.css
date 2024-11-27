@@ -1,0 +1,146 @@
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #4CAF50, #8BC34A); /* Verde suave */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+/* Título da página */
+.titulo {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.titulo h2 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Botão de voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover {
+    background-color: #006400;
+    transform: scale(1.1);
+}
+
+.back-button:active {
+    background-color: #3A6B3C;
+}
+
+/* Introdução */
+.intro {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-size: 1.2rem;
+}
+
+/* Materiais */
+.materiais {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.materiais h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.materiais ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Passos */
+.passos {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.passos h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.passos ol {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.passos li {
+    margin-bottom: 10px;
+}
+
+/* Resultado */
+.resultado {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.resultado h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.resultado p {
+    font-size: 1.2rem;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: auto;
+}
+
+/* Animação Fade-in */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

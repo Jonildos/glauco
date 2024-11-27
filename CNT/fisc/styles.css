@@ -1,0 +1,121 @@
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #1b1b2f, #2e3b4e); /* Fundo escuro */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    opacity: 1; /* Garantir que a página apareça */
+    animation: fadeIn 2s ease-in-out forwards;
+    padding-bottom: 60px; /* Espaço para garantir que o rodapé não sobreponha o conteúdo */
+}
+
+/* Título da página */
+.titulo {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+}
+
+.titulo h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0;
+}
+
+.titulo h2 {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+}
+
+/* Botão de voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #00A4D6;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.back-button:hover {
+    background-color: #006B8F;
+    transform: scale(1.1);
+}
+
+.back-button:active {
+    background-color: #3A6B7C;
+}
+
+/* Introdução */
+.intro, .drake-equation, .explaining, .conclusao {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo mais opaco */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.intro, .drake-equation, .explaining, .conclusao {
+    font-size: 1.2rem;
+}
+
+/* Equação de Drake */
+.drake-equation .equation {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFDC00;
+}
+
+/* Explicação dos termos */
+.explaining h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.explaining ol {
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+.explaining li {
+    margin-bottom: 10px;
+}
+
+/* Conclusão */
+.conclusao h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative; /* Ajusta a posição do rodapé */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Animação de FadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

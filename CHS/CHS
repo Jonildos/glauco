@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="chs-styles.css">
+  <title>CHS - Ciências Humanas e Sociais</title>
+</head>
+<body>
+  <header>
+    <button class="back-button" onclick="goBack()">Voltar</button>
+    <div class="titulo">
+      <h1>CHS</h1>
+      <h2>Ciências Humanas e Sociais</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <button class="chs-button sociologia"><a href="socio/index.html">Sociologia</a></button>
+      <button class="chs-button filosofia"><a href="Filo/index.html">Filosofia</a></button>
+      <button class="chs-button historia"><a href="hist/index.html">História</a></button>
+      <button class="chs-button geografia"><a href="geo/index.html">Geografia</a></button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Jonas Soares | Projeto IoT</p>
+  </footer>
+
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+  </script>
+</body>
+</html>

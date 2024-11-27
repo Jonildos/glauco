@@ -1,0 +1,83 @@
+/* Corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #0d0d0d);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* Animação de FadeIn */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Título da página */
+.titulo {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.titulo h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 0;
+}
+
+.titulo h2 {
+    font-size: 1.5rem;
+    color: #cfcfcf;
+}
+
+/* Botão de voltar */
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #cfcfcf;
+    color: #1a1a1a;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    margin: 50px auto;
+    max-width: 800px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: #101010;
+    color: #b2b2b2;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
