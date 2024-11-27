@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Artes</title>
+</head>
+<body>
+  <div class="book-page">
+    <header class="text-center">
+      <button class="btn btn-outline-light back-button" onclick="goBack()">Voltar</button>
+      <h1 class="page-title">Artes</h1>
+    </header>
+
+    <main class="content d-flex">
+      <div class="text-content">
+        <h2>Minha Matéria Favorita</h2>
+        <p>
+          Uma das minhas atividades favoritas em Artes foi a produção de uma tela no estilo expressionista.  
+          Esse movimento artístico enfatiza emoções, sentimentos e a subjetividade, utilizando cores vibrantes e pinceladas marcantes.
+        </p>
+        <p>
+          Durante a produção, aprendi a expressar ideias abstratas e sentimentos profundos através das formas e das cores, criando uma arte que dialoga com o observador de maneira intensa e pessoal.
+        </p>
+        <blockquote class="blockquote">
+          <p class="mb-0">"A arte não reproduz o que vemos, ela nos faz ver."</p>
+        </blockquote>
+      </div>
+      <div class="image-content">
+        <div class="image-frame">
+          <img src="imgs/foto1.jpg" alt="Tela Expressionista" class="image">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 - Jonas Soares | Projeto IoT</p>
+    </footer>
+  </div>
+
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+  </script>
+</body>
+</html>

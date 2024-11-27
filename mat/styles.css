@@ -1,0 +1,102 @@
+/* Fundo da página */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #1f3c88, #a8d5e2); /* Gradiente azul */
+    color: white;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Contêiner principal */
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 1200px; /* Aumentando o limite máximo */
+    margin: 0 auto;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2.5rem;
+    color: #1f3c88;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2, h3 {
+    font-size: 1.8rem;
+    color: #1f3c88;
+    border-bottom: 2px solid #1f3c88;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* Botão de voltar */
+.back-button {
+    font-size: 1rem;
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background: #1f3c88;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background: #14274e;
+    transform: scale(1.1);
+}
+
+/* Gráfico */
+.graph-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Aumentando o tamanho do gráfico */
+#geogebra-graph {
+    width: 100% !important; /* Faz o gráfico ocupar 100% da largura */
+    height: 500px; /* Altura maior para melhor visualização */
+    margin: 0 auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    /* Ajustando o gráfico para telas pequenas */
+    #geogebra-graph {
+        height: 400px; /* Diminuindo a altura em telas menores */
+    }
+}

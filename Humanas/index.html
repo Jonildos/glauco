@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Adicionando o Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Humanas</title>
+</head>
+<body>
+  <header>
+    <button class="btn btn-outline-light back-button" onclick="goBack()">Voltar</button>
+    <div class="titulo">
+      <h1>Humanas</h1>
+      <h2>Ciências Humanas e Sociais</h2>
+    </div>
+  </header>
+
+  <main>
+    <section class="navegacao">
+      <button class="btn btn-primary materia">
+        <a href="port/index.html">Português</a>
+      </button>
+      <button class="btn btn-primary materia">
+        <a href="english/index.html">Inglês</a>
+      </button>
+      <button class="btn btn-primary materia">
+        <a href="artes/index.html">Artes</a>
+      </button>
+      <button class="btn btn-primary materia">
+        <a href="ed.fisica/index.html">Educação Física</a>
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Jonas Soares | Projeto IoT</p>
+  </footer>
+
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+  </script>
+</body>
+</html>

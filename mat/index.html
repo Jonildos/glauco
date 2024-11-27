@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!-- Carregando o Plotly.js -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Matemática - Elipse Interativa</title>
+</head>
+<body>
+  <div class="container my-5">
+    <header class="text-center mb-4">
+      <h1>Matemática</h1>
+      <p class="lead">Explorando o poder dos gráficos interativos</p>
+      <button class="btn btn-light back-button" onclick="goBack()">Voltar</button>
+    </header>
+
+    <main>
+      <section class="mb-4">
+        <h2>Minha Matéria Favorita</h2>
+        <p>
+          Uma das minhas atividades favoritas em Matemática foi trabalhar com gráficos interativos, como os que o 
+          GeoGebra e o **Plotly.js** proporcionam. Essa ferramenta torna a visualização de conceitos matemáticos mais clara e intuitiva.
+        </p>
+        <p>
+          O exemplo abaixo mostra uma <strong>elipse</strong>, onde você pode interagir com seus eixos e entender suas propriedades geométricas 
+          de forma prática e dinâmica.
+        </p>
+      </section>
+
+      <section class="graph-container mb-4">
+        <h3>Gráfico Interativo</h3>
+        <div id="geogebra-graph"></div> <!-- A área para o gráfico -->
+      </section>
+    </main>
+
+    <footer class="text-center mt-4">
+      <p>&copy; 2024 - Jonas Soares | Projeto IoT</p>
+    </footer>
+  </div>
+
+  <script>
+    // Função para plotar a elipse com Plotly
+    function plotElipse() {
+        var theta = [];
+        var x = [];
+        var y = [];
+
+        // Gerar pontos para a elipse
+        for (var t = 0; t <= 2 * Math.PI; t += 0.01) {
+            theta.push(t);
+            x.push(5 * Math.cos(t));  // a = 5 (semi-eixo maior)
+            y.push(3 * Math.sin(t));  // b = 3 (semi-eixo menor)
+        }
+
+        // Plotando a elipse com Plotly
+        var trace = {
+            x: x,
+            y: y,
+            type: 'scatter',
+            mode: 'lines',
+            name: 'Elipse',
+            line: {
+                color: 'blue',
+                width: 2
+            }
+        };
+
+        var layout = {
+            title: 'Gráfico de Elipse',
+            xaxis: {
+                title: 'Eixo X',
+                range: [-6, 6]  // Ajuste da escala do eixo X
+            },
+            yaxis: {
+                title: 'Eixo Y',
+                range: [-4, 4]  // Ajuste da escala do eixo Y
+            }
+        };
+
+        // Gerando o gráfico
+        Plotly.newPlot('geogebra-graph', [trace], layout);
+    }
+
+    // Chama a função para exibir o gráfico
+    plotElipse();
+
+    // Função de retorno
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+</html>
