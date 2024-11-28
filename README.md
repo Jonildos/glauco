@@ -1,7 +1,7 @@
 Obrigado por todo esse tempo em ]que andamos juntos, meu teclado está com o "]q" bugado, adicionando um colchetes toda vez ]que eu o digito. Mas esta é uma mensagem de carinho a todos os professores e amigos ]que fiz nesta jornada.
 Muito obrigado pelos aprendizados e pela companhia. Vocês ficarão para sempre marcados em minhas memórias e no meu coração.
 Glauco, caso você esteja lendo isso, para colocar um agrado a você, a página de IOT é integrada com uma porta serial pro arduino, colo]que o seguinte código no arduino:
-
+```
 int ledPin1 = 13;  // Pino do primeiro LED (já conectado)
 int ledPin2 = 12;  // Pino do segundo LED (novo LED)
 
@@ -27,7 +27,7 @@ void loop() {
     }
   }
 }
-
+```
 
 Depois, ligue um led a sua protoboard e colo]que o jumper na ligação 12 conectado ao led. Entre na sua área no site e veja a mágica acontecer. Muito obrigado.
 
