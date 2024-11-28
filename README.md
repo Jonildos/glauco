@@ -1,3 +1,4 @@
+# obrigado
 Obrigado por todo esse tempo em ]que andamos juntos, meu teclado está com o "]q" bugado, adicionando um colchetes toda vez ]que eu o digito. Mas esta é uma mensagem de carinho a todos os professores e amigos ]que fiz nesta jornada.
 Muito obrigado pelos aprendizados e pela companhia. Vocês ficarão para sempre marcados em minhas memórias e no meu coração.
 Glauco, caso você esteja lendo isso, para colocar um agrado a você, a página de IOT é integrada com uma porta serial pro arduino, colo]que o seguinte código no arduino:
